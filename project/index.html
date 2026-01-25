@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cascade Range</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="layout.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="grid">
+        <nav id="main-nav" class="minimized">
+            <a href="index.html" class="logo">Logo</a>
+            <a id="menu-toggle" class="hamburger-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul id="main-menu" class="hidden">
+                <li><a href="index.html">home</a></li>
+                <li><a href="california.html">california</a></li>
+                <li><a href="oregon.html">oregon</a></li>
+                <li><a href="washington.html">washington</a></li>
+            </ul>
+        </nav>
+        <header class="main">
+            <hgroup>
+                <h1>The Cascade Range</h1>
+                <p>All about the great Cascade Mountain Range in the Pacific Northwest</p>
+            </hgroup>
+        </header>
+        <main>
+            <section id="california" class="bg-parallax">
+                <article>
+                    <h2>California Cascades</h2>
+                    <p>The California Cascades can be broken up into two major sections. At the southernmost end of the range is the Lassen Cascade, centered on Lassen Peak and Lassen Volcanic National Park.</p>
+                    <p>North of this area is the Shasta Cascade, which is naturally dominated by magnificent Mount Shasta. However, the mountain is only a significant part of a larger volcanic complex, much of which is underappreciated.</p>
+                    <p>Running between these two regions is the Pit River, which conveniently divides the Cascades in California.</p>
+                </article>
+                <aside>
+                    <figure>
+                        <img src="images/Sunrise_on_Mount_Shasta.jpg" alt="picture of Mt Shasta">
+                        <figcaption>Sunrise on Mount Shasta from <cite><a href="https://commons.wikimedia.org/wiki/File:Sunrise_on_Mount_Shasta.jpg">Wikimedia Commons</a></cite></figcaption>
+                    </figure>
+                </aside>
+            </section>
+            <div class="buffer"></div>
+            <section id="oregon" class="aside-left bg-parallax">
+                <article>
+                    <h2>Oregon Cascades</h2>
+                    <p>The Cascade mountain system extends from northern California to central British Columbia. In Oregon, it comprises the Cascade Range, which is 260 miles long and, at greatest breadth, 90 miles wide</p>
+                    <p>Along its Oregon segment, the Cascade Range is almost entirely volcanic in origin. The volcanoes and their eroded remnants are the visible magmatic expression of the Cascadia subduction zone, where the offshore Juan de Fuca tectonic plate is subducted beneath North America.</p>
+                    <p>Subduction occurs as two lithospheric plates collide, and an underthrusted oceanic plate is commonly dragged into the mantle by the pull of gravity, carrying ocean-bottom rock and sediment down to where heat and pressure expel water.</p>
+                </article>
+                <aside>
+                    <figure>
+                        <img src="images/Three_Sisters_Mountain_Oregon.jpg" alt="picture of three sisters mountain range">
+                        <figcaption>Three Sisters Mountain, Oregon from <cite><a href="https://commons.wikimedia.org/wiki/File:Three_Sisters_Mountain,_Oregon_%2836627911423%29.jpg">File:Three Sisters Mountain, Oregon (36627911423).jpg</a></cite></figcaption>
+                    </figure>
+                </aside>
+            </section>
+            <div class="buffer"></div>
+            <section id="washington" class="bg-parallax">
+                <article>
+                    <h2>Washington Cascades</h2>
+                    <p>The beautiful North Cascade Range, located in northwestern Washington State, has some of the most scenic, and geologically complex mountains in the United States. </p>
+                    <p>The sharp peaks, and rugged terrain of the northern portion of the range have an average elevation of 7,000 feet and are home to numerous alpine glaciers. The Range receives an average of 80 inches of rain annually, and as a result, it is densely vegetated.</p>
+                    <p>The geologic history of the North Cascade Range is a complicated puzzle that records over 400 million years of various rocks and terranes that have been scraped off and smashed together, folded and buried, faulted and moved, finally making their way to their present day position in western Washington.</p>
+                </article>
+                <aside>
+                    <figure>
+                        <img src="images/Mount_Baker_from_Boulder_Creek.jpg" alt="picture of Mt Baker">
+                        <figcaption>Mount Baker from Boulder Creek from <cite><a href="https://commons.wikimedia.org/wiki/File:Mount_Baker_from_Boulder_Creek.jpg">Wikimedia Commons</a></cite></figcaption>
+                    </figure>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <p>Add copyright @copy; 2025.</p>
+            <p>Credits</p>
+            <ul>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Mount_Shasta_as_seen_from_Highway_97-2920.jpg">BG image of Mt. Shasta (as seen from Highway 97)</a> by Frank Schulenburg, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0">, via Wikimedia Commons</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Mt._Thielsen_from_Oregon_230_(8318328125).jpg">Oregon Department of Transportation</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Skykomish_River_and_Cascade_Mountains_from_Sultan,_WA.jpg">SounderBruce</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="menu-toggle.js"></script>
+</body>
+</html>

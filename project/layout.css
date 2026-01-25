@@ -1,0 +1,91 @@
+/* Add padding to all layout elements */
+header, aside, article, section, footer {
+    padding: 0.5em 1em;
+}
+figure {
+    margin: 0;
+}
+nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5em auto 4em;
+    grid-template-rows: 2em auto;
+    grid-template-areas:
+        "logo . toggle"
+        "navbar navbar navbar";
+    padding: 0.5em 1px;
+}
+a.logo {
+    grid-area: logo;
+    display: inline-block;
+    padding: 0.5em;
+    height: 2em;
+}
+a.hamburger-toggle {
+    grid-area: toggle;
+    display: flex;
+    height: 2em;
+}
+ul#main-menu {
+    grid-area: navbar;
+}
+hgroup h1, hgroup p {
+    padding: 0.5em 1em;
+}
+
+/* Parallax effect
+    - fixed position bg image
+    - Idea from https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=Fixing%20the%20position%20of%20the%20background%20was%20the%20earliest%20method,can%20create%20a%20parallax%20effect.
+
+    **For more advanced Parallax** see
+    https://keithclark.co.uk/articles/pure-css-parallax-websites/#parallax-sections
+
+    I will look into that.
+   */
+.bg-parallax {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+section#california {
+    background-image: url("images/Mount_Shasta_as_seen_from_Highway_97-2920.jpg");
+}
+section#oregon {
+    background-image: url("images/Mt._Thielsen_from_Oregon_230_\(8318328125\).jpg");
+}
+section#washington {
+    background-image: url("images/Skykomish_River_and_Cascade_Mountains_from_Sultan\,_WA.jpg");
+}
+div.buffer {
+    width: 100%;
+    min-height: 60vh;
+    background-color: #27353e;
+}
+article, aside {
+    background-color: rgba(255, 255, 255, 0.576);
+    width: 100%;
+}
+@media screen and (min-width: 40em) {
+    /* Create our Layouts using flexbox */
+    section {
+        width: 80em;
+        max-width: 98%;
+        margin: 0 auto; /* center the content */
+        display: flex;
+    }
+    aside {
+        width: 20em;
+        order: 2;
+    }
+    article {
+        order: 1;
+    }
+    .aside-left aside {
+        order: -1;
+    }
+}
