@@ -1,6 +1,7 @@
 /* Add padding to all layout elements */
 header, aside, article, section, footer {
     padding: 0.5em 1em;
+    box-sizing: border-box;
 }
 figure {
     margin: 0;
@@ -19,7 +20,8 @@ a.logo {
     grid-area: logo;
     display: inline-block;
     padding: 0.5em;
-    height: 2em;
+    height: 2.6em;
+    width: 3.5em;
 }
 a.hamburger-toggle {
     grid-area: toggle;
@@ -67,25 +69,77 @@ div.buffer {
     background-color: #27353e;
 }
 article, aside {
-    background-color: rgba(255, 255, 255, 0.576);
+    background-color: rgba(255, 255, 255, 0.776);
     width: 100%;
 }
+
+header {
+    background-image: url("images/Mount_Hood_reflected_in_Mirror_Lake_Oregon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header.washington {
+    background-image: url("images/Mt.-Rainier-Fact-Sheet.jpg");
+}
+hgroup {
+    margin-top: 5em;
+}
+figure img {
+    width: 100%;
+    display: block;
+}
 @media screen and (min-width: 40em) {
+    /* Banner Background - big photo */
+    body {
+        font-size: 120%;
+    }
+    header {
+        height: 80vh;
+        width: 100%;
+    }
+    hgroup {
+        margin-top: 5em;
+        margin-right: 50%;
+        font-size: larger;
+        width: 25em;
+    }
     /* Create our Layouts using flexbox */
     section {
-        width: 80em;
-        max-width: 98%;
+        width: 100%;
         margin: 0 auto; /* center the content */
         display: flex;
     }
+    section div {
+        background-color: rgba(255, 255, 255, 0.776);
+        display: flex;
+        width: 100%;
+    }
     aside {
-        width: 20em;
+        width: 30em;
         order: 2;
+    }
+    aside figure {
+        display: flex;
+        flex-direction: column;
     }
     article {
         order: 1;
     }
     .aside-left aside {
         order: -1;
+    }
+}
+@media screen and (min-width: 70em) {
+    body {
+        font-size: large;
+    }
+}
+@media screen and (min-width: 100em) {
+    body {
+        font-size: x-large;
+    }
+    a.logo {
+        height: 1.6em;
+        width: 2em;
     }
 }

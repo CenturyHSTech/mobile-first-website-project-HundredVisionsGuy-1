@@ -13,33 +13,12 @@ a {
 a:hover {
     color: rgb(209, 26, 26);
 }
-header {
-    background-image: url("images/Mount_Hood_reflected_in_Mirror_Lake_Oregon.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-header.washington {
-    background-image: url("images/Mt.-Rainier-Fact-Sheet.jpg");
-}
 hgroup {
-    margin-top: 5em;
     font-size: larger;
     background-color: #f0f0f2c7;
     color:#121218;
 }
-@media screen and (min-width: 40em) {
-    /* Banner Background - big photo */
-    header {
-        height: 80vh;
-        width: 100%;
-    }
-    header.washington {
-        background-image: url("images/Mt.-Rainier-Fact-Sheet.jpg");
-    }
-    hgroup {
-        margin-top: 0;
-        margin-right: 50%;
-        font-size: larger;
-        width: 20em;
-    }
+main {
+    font-size: 140%;
+    line-height: 1.4;
 }

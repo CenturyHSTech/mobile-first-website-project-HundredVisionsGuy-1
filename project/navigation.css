@@ -76,7 +76,18 @@ nav.minimized {
 }
 
 @media screen and (min-width: 40em) {
-    nav ul {
+    nav#main-nav {
+        grid-template-areas: 
+        "logo . navbar";
+    }
+    nav ul#main-menu {
         flex-direction: row;
+        transform: translate(-0.5em, 0.5em);
+    }
+    #menu-toggle {
+        display: none;
+    }
+    ul#main-menu {
+        transform: translate(-1px, 1.5em);
     }
 }
