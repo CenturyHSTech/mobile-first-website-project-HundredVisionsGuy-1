@@ -83,15 +83,19 @@ header.washington {
 }
 hgroup {
     margin-top: 5em;
+    margin-bottom: 1em;
 }
 figure img {
     width: 100%;
     display: block;
 }
+section div {
+    margin-top: 1em;
+}
 @media screen and (min-width: 40em) {
     /* Banner Background - big photo */
     body {
-        font-size: 120%;
+        font-size: 110%;
     }
     header {
         height: 80vh;
